@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Mahal mo?</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
+
+              *{
+  
+               -webkit-box-sizing: border-box;
+               -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                font-family: "Poppins", sans-serif;
+                margin: 0;
+                padding: 0;
+              }
+
+            body{
+                color: white;
+                background-image: linear-gradient(black, purple);
+            }
+            h1{
+                text-align: center;
+            }
+            button{
+                background-color: pink;
+                flex-wrap: ;
+                text-align: center;
+                border-radius: 7px;
+                transition: 0.3 ease;
+            }
+            button :hover{
+                background-color: purple;
+            }
+            [popover]{
+                margin-top: 100px;
+                text-align: center;
+                color: white;
+                flex-wrap: ;
+                background-image: linear-gradient(rgb(73, 47, 73),rgb(41, 12, 41));
+                width: auto;
+                box-shadow: 0 0 30px white
+            }
+            [popover]:backdrop{
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Mahal mo?</h1>
+        <div class="container">
+            <div>
+                <button popovertarget="hindee">OO</button>
+                <button popovertarget="hinde">HINDE</button>
+            </div>
+            <div id="hinde" popover>
+                <h2>Paulit, Mahal ka?</h2>
+                <button popovertarget="hindee">HINDE</button>
+            </div>
+            <div id="hindee" popover>
+                <h3>Basahin mo nga to.</h3>
+                <p>"I can't help but feel so broken-hearted
+                     because I know that you have found love elsewhere.
+                      How could I forget the love that i gave to you. It's a constant reminder of what once was,                        and what can never be again. My heart aches for what could have been,
+                     and the memories that now seem nothing more than a distant dream.
+                  As time goes by,
+                   it becomes harder to deny the fact that the love I have for you is no longer reciprocated,
+                     and harder still to deny the love you have found in someone else."
+                </p>
+                <h6>Masakit?</h6>
+                <button popovertarget="yes">Yes</button>
+            </div>
+            <div id="yes" popover>
+                "Sometimes starting over is the only way,
+                 but it's not always easy. It's often hard to move on when it feels like you're losing a part of yourself
+                 , but letting go is necessary. It's amazing how someone can break your heart and you can still love them,
+                  even though you know you shouldn't. It's even harder to give up on something you've always wanted,
+                   even if it feels hopeless. The important thing to remember is that you don't have to face it all alone
+                   . There are people who care and would gladly stand by your side as you find your way forward."
+            </div>
+            <div id="oo" popover>
+                OK
+            </div>
+        </div>
+    </body>
+</html>
